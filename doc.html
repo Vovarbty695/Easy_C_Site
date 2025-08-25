@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentaion</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EasyC++ Documentation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body{
+        justify-self: center;
+    }
+  </style>
 </head>
 <body>
-    <h1>Linking to project</h1>
+  <div class="linking">
+    <h1>🔗 Linking EasyC++ to Your Project</h1>
+    <p>We recommend using <strong>CMake</strong> — it's clean, cross-platform, and flexible. You have two options:</p>
+
+    <h2>🛠 Option 1: Link Prebuilt Binaries</h2>
+    <div class="code">
+      <pre><code>
+cmake_minimum_required(VERSION 3.30)
+project("For_example")
+
+include_directories("path_to_include_dir_in_your_project/include")
+link_directories("path_to_lib_dir_in_your_project/folder_with_your_OS/")
+
+add_executable(For_example
+   src/main.cpp
+)
+
+target_link_libraries(For_example PUBLIC EasyC)
+      </code></pre>
+    </div>
+
+    <h2>🧩 Option 2: Add EasyC++ as Subdirectory</h2>
+    <div class="code">
+      <pre><code>
+cmake_minimum_required(VERSION 3.30)
+project("For_example")
+
+add_subdirectory(EasyC)
+
+add_executable(For_example
+   src/main.cpp
+)
+
+target_link_libraries(For_example PUBLIC EasyC)
+      </code></pre>
+    </div>
+
+    <div class="macos">
+      ⚠️ No prebuilt binaries for macOS yet.  
+      If you're on macOS, compile the library using CMake manually.  
+      Need help? Reach out.
+    </div>
+
+    <div class="syntax">
+      <h2>🚀 Program Entry</h2>
+      <p><code>start()</code> — Entry point of your program. Everything begins here.</p>
+
+      <h2>🧠 Functions</h2>
+      <ul>
+        <li><code>func</code> — Function without return</li>
+        <li><code>func_int</code> — Returns an integer</li>
+        <li><code>func_float</code> — Returns a decimal</li>
+        <li><code>func_string</code> — Returns text</li>
+        <li><code>func_bool</code> — Returns true/false</li>
+      </ul>
+
+      <h2>🖨 Output & Input</h2>
+      <ul>
+        <li><code>print(msg)</code> — Print message to terminal</li>
+        <li><code>error(msg)</code> — Show error message</li>
+        <li><code>input()</code> — Wait for keyboard input</li>
+      </ul>
+
+      <h2>📦 Variables</h2>
+      <ul>
+        <li><code>decimal</code> — Floating-point number</li>
+        <li><code>integer</code> — Whole number</li>
+        <li><code>text</code> — String</li>
+        <li><code>boolean</code> — True or false</li>
+      </ul>
+
+      <h2>✅ Program Status</h2>
+      <ul>
+        <li><code>done</code> — Marks successful completion</li>
+        <li><code>problem [code]</code> — Ends program with error code</li>
+      </ul>
+
+      <h2>⏱ Timing & Terminal</h2>
+      <ul>
+        <li><code>wait(s)</code> — Delay in seconds</li>
+        <li><code>clear_screen</code> — Clears terminal</li>
+        <li><code>pause_system</code> — Pauses terminal</li>
+      </ul>
+
+      <h2>📚 Arrays & Maps</h2>
+      <ul>
+        <li><code>list(type)</code> — Dynamic array</li>
+        <li><code>map(key, value)</code> — Key-value storage</li>
+        <li><code>add_to(container, item)</code> — Add item to end</li>
+        <li><code>size_of(container)</code> — Get number of elements</li>
+      </ul>
+
+      <h2>🗂 File System</h2>
+      <ul>
+        <li><code>create_folder(path, name)</code> — Create folder</li>
+        <li><code>create_file(path, name)</code> — Create file</li>
+        <li><code>delete_folder(path, name)</code> — Delete folder</li>
+        <li><code>delete_file(path, name)</code> — Delete file</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
