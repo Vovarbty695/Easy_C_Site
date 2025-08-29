@@ -1,10 +1,66 @@
 body{
-    background-color: antiquewhite;
+    background-color: #FDFDFD;
     display: flex;
+    font-family: "Itim";
 }
 
 .header{
     width: 500px;
+    background-color: #E9E9E9;
+    height: auto;
+    height: 100vh;
+}
+
+.Start{
+    margin-left: 10%;
+}
+
+.hello{
+    background-color: #F9F9F9;
+    border-radius: 30px;
+    border: black solid;
+    padding: 10px;
+    text-align: center;
+}
+
+.downloads{
+    margin-top: 20px;
+    background-color: #F9F9F9;
+    border-radius: 30px;
+    border: black solid;
+    padding: 10px;
+    text-align: center;
+}
+
+.Updates{
+    margin-top: 20px;
+    background-color: #F9F9F9;
+    border-radius: 30px;
+    border: black solid;
+    padding: 10px;
+    text-align: center;
+}
+
+.github_b{
+    border-radius: 10px; 
+    margin-left: 10%;
+    background-color: #6C6C6C;
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.doc_b{
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 10px; 
+    margin-left: 10%;
+    background-color: #6C6C6C;
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px;
 }
 
 .code{
