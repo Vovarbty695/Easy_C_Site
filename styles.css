@@ -2,6 +2,7 @@ body{
     background-color: #FDFDFD;
     display: flex;
     font-family: "Itim";
+    margin: 0;
 }
 
 .header{
